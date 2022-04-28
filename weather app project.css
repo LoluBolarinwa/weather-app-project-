@@ -131,6 +131,7 @@ input {
 }
 
 #section{
+    font-family: 'Nunito', sans-serif;
     background-color: hotpinfk;
     margin-top: 20px;
     /* padding:7% 20%; */
@@ -159,7 +160,7 @@ input {
 
 
 .list{
-    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Nunito', sans-serif; */
     /* list-style-type: none; */
     /* width:60px;
     height:150px; */
@@ -170,8 +171,8 @@ input {
 
 .humidity{
     list-style-type: none;
-    font-size: large;
-    font-weight: 400;
+    /* font-size: larger; */
+    /* font-weight: 400; */
 }
 
 .wind{

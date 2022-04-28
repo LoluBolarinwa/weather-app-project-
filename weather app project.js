@@ -31,15 +31,18 @@ const weatherApi = {
         const { name } = apiData;
         const { icon, description } = apiData.weather[0];
         const { temp, humidity } = apiData.main;/*weatherData.weather[0];*/
-        const { speed, deg, gust } = apiData.wind;
+        const { speed } = apiData.wind;
         const { country } = apiData.sys;
-        console.log(name,country, temp,humidity,icon, description); 
+        console.log(name,country, temp,humidity,speed,icon, description); 
 
         document.querySelector("#city-js").innerText = name + ",";
         document.querySelector("#country-js").innerHTML = country;
         document.querySelector(".icon").src = "http://openweathermap.org/img/wn/" + icon + "@2x.png";
         document.querySelector(".weatherDescription").innerHTML = description;
-        document.querySelector(".temp").innerHTML = temp;
+        document.querySelector(".temp").innerHTML = temp + "°C";
+        document.querySelector(".humidity").innerHTML = "Humidity:"+ humidity + "%";
+        document.querySelector("#speed").innerText =  "Wind" + speed + "km/h";
+
 
 
 
