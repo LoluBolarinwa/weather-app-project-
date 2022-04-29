@@ -42,15 +42,22 @@ const weatherApi = {
         document.querySelector(".temp").innerHTML = temp + "°C";
         document.querySelector(".humidity").innerHTML = "Humidity:"+ humidity + "%";
         document.querySelector("#speed").innerText =  "Wind" + speed + "km/h";
+    },
 
-
-
-
-
+    search: function() {
+        this.fetchWeather(document.querySelector(".inputSearch").value)  ;
+        
     }
 };
+// document.querySelector(".searchArea button").addEventListener("click", function(){
+
+            // var val = document.querySelector(".inputSearch").value;
+            // console.log(val);
+        // })
 
 
+
+        
 // const displayWeather = function(data){
 //         function displayDate(){
     
