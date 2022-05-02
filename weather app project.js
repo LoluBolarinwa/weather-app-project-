@@ -44,16 +44,30 @@ const weatherApi = {
         document.querySelector("#speed").innerText =  "Wind" + speed + "km/h";
     },
 
-    search: function() {
-        this.fetchWeather(document.querySelector(".inputSearch").value)  ;
-        
-    }
+    // search: function() {
+    //     this.weatherData(document.querySelector(".inputSearch").value);
+    // },
 };
-// document.querySelector(".searchArea button").addEventListener("click", function(){
 
+function searchURL(){
+    // window.location = "http://www.myurl.com/search/" + (input text value);
+//   var search_text = document.getElementByClass('inputSearch').value;
+//    console.log(search_text)
+        // var searchItem = "";
+        var chityn =  "";
+        chityn = document.getElementById('city-name-js').value;
+        // alert(chityn);
+        // chityn = "ibadan";
+             weatherApi.fetchWeather(chityn);
+            
+
+  }
+
+// document.querySelector(".button").addEventListener("click", function(){
+//         weatherApi.search();   
             // var val = document.querySelector(".inputSearch").value;
             // console.log(val);
-        // })
+        // });
 
 
 
@@ -64,10 +78,10 @@ const weatherApi = {
 //         }
 // }
 
-const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-var weatherDate = new Date();
-let month = months[weatherDate.getMonth()];
-document.getElementById("Date").innerHTML = month + " "+weatherDate.getDate() + ", "+weatherDate.getFullYear();
+// const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+// var weatherDate = new Date();
+// let month = months[weatherDate.getMonth()];
+// document.getElementById("Date").innerHTML = month + " "+weatherDate.getDate() + ", "+weatherDate.getFullYear();
 
 
 
