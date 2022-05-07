@@ -39,7 +39,7 @@ const weatherApi = {
         document.querySelector("#country-js").innerHTML = country;
         document.querySelector(".icon").src = "http://openweathermap.org/img/wn/" + icon + "@2x.png";
         document.querySelector(".weatherDescription").innerHTML = description;
-        document.querySelector(".temp").innerHTML = temp + "°C";
+        document.querySelector(".temp").innerHTML = temp.toFixed(1) + "°C";
         document.querySelector(".humidity").innerHTML = "Humidity: "+ humidity + "%";
         document.querySelector("#speed").innerText =  "Wind: " + speed + "km/h";
     },
@@ -59,6 +59,9 @@ const weatherApi = {
 function searchURL(){
         weatherApi.search();
   };
+
+  /* To display weather to vienna on Refresh or first visit */
+  weatherApi.fetchWeather("Vienna");
 
   /* To Make Enter key Search for city */
 var inputSearch = document.getElementById('city-name-js');
