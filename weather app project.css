@@ -110,7 +110,8 @@ input {
 }
 
 .temp{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Nunito', sans-serif;
+    margin-top:1.5rem ;
     /* font-size: 900; */
     /* width: 75%;
     height: 50px; */
@@ -129,6 +130,10 @@ input {
     margin: 10px auto 0;
     font-style: oblique;
     text-transform: capitalize;
+}
+
+#section.loading{
+    visibility: hidden;
 }
 
 #section{
@@ -174,6 +179,7 @@ input {
     list-style-type: none;
     font-size: smaller;
     font-weight: 400;
+    margin-top:1rem ;
 }
 
 .wind{

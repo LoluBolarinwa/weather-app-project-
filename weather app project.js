@@ -42,6 +42,8 @@ const weatherApi = {
         document.querySelector(".temp").innerHTML = temp.toFixed(1) + "°C";
         document.querySelector(".humidity").innerHTML = "Humidity: "+ humidity + "%";
         document.querySelector("#speed").innerText =  "Wind: " + speed + "km/h";
+
+        document.querySelector("#section").classList.remove("loading");
     },
 
     backgroundPictures: function(){
