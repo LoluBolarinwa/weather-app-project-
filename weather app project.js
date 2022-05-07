@@ -44,6 +44,10 @@ const weatherApi = {
         document.querySelector("#speed").innerText =  "Wind: " + speed + "km/h";
     },
 
+    backgroundPictures: function(){
+        if (this.description == "clear sky") { }
+    },
+
     search: function() {
         this.fetchWeather(document.getElementById('city-name-js').value);
         // var city_name = "";
@@ -55,6 +59,20 @@ const weatherApi = {
 function searchURL(){
         weatherApi.search();
   };
+
+  /* To Make Enter key Search for city */
+var inputSearch = document.getElementById('city-name-js');
+inputSearch.addEventListener("keyup", function(event){
+    if (event.key == "Enter") {
+        weatherApi.search();   
+    }
+});
+
+// function changeBackPicture(params) {
+//     call inner function
+// }
+  
+
 
 // document.querySelector(".button").addEventListener("click", function(){
 //         weatherApi.search();   
@@ -80,19 +98,3 @@ document.getElementById("Date").innerHTML = month + " "+weatherDate.getDate() + 
 
 
 
-
-
-
-
-
-
-
-
-
-// function changeDate() {
-//     var cjange = document.querySelector(".date").innerHTML;
-//     this.cjange = "<strong>Javascript</strong>";
-// }
-
-
-// document.querySelector("h1")[0].innerHTML = " I like your smile";
