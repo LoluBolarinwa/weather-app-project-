@@ -40,28 +40,21 @@ const weatherApi = {
         document.querySelector(".icon").src = "http://openweathermap.org/img/wn/" + icon + "@2x.png";
         document.querySelector(".weatherDescription").innerHTML = description;
         document.querySelector(".temp").innerHTML = temp + "°C";
-        document.querySelector(".humidity").innerHTML = "Humidity:"+ humidity + "%";
-        document.querySelector("#speed").innerText =  "Wind" + speed + "km/h";
+        document.querySelector(".humidity").innerHTML = "Humidity: "+ humidity + "%";
+        document.querySelector("#speed").innerText =  "Wind: " + speed + "km/h";
     },
 
-    // search: function() {
-    //     this.weatherData(document.querySelector(".inputSearch").value);
-    // },
+    search: function() {
+        this.fetchWeather(document.getElementById('city-name-js').value);
+        // var city_name = "";
+        // city_name = document.getElementById('city-name-js').value;
+        // this.fetchWeather(city_name);
+    },
 };
 
 function searchURL(){
-    // window.location = "http://www.myurl.com/search/" + (input text value);
-//   var search_text = document.getElementByClass('inputSearch').value;
-//    console.log(search_text)
-        // var searchItem = "";
-        var chityn =  "";
-        chityn = document.getElementById('city-name-js').value;
-        // alert(chityn);
-        // chityn = "ibadan";
-             weatherApi.fetchWeather(chityn);
-            
-
-  }
+        weatherApi.search();
+  };
 
 // document.querySelector(".button").addEventListener("click", function(){
 //         weatherApi.search();   
@@ -78,10 +71,10 @@ function searchURL(){
 //         }
 // }
 
-// const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-// var weatherDate = new Date();
-// let month = months[weatherDate.getMonth()];
-// document.getElementById("Date").innerHTML = month + " "+weatherDate.getDate() + ", "+weatherDate.getFullYear();
+const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+var weatherDate = new Date();
+let month = months[weatherDate.getMonth()];
+document.getElementById("Date").innerHTML = month + " "+weatherDate.getDate() + ", "+weatherDate.getFullYear();
 
 
 
