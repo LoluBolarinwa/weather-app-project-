@@ -131,7 +131,7 @@ input {
     font-style: oblique;
     text-transform: capitalize;
 }
-
+/* Remove inacurate HTML Preload Data*/
 #section.loading{
     visibility: hidden;
 }
