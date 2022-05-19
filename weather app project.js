@@ -44,7 +44,7 @@ const weatherApi = {
         document.querySelector("#speed").innerText =  "Wind: " + speed + "km/h";
 
         document.querySelector("#section").classList.remove("loading");
-
+// Different Images Based on Weather Description
 if (description == "clear sky") {
         document.body.style.backgroundImage = "url('public/images/desktop/pexels-egor-kamelev-813872.jpg')";
 } else if (description == " few clouds") {
