@@ -44,11 +44,40 @@ const weatherApi = {
         document.querySelector("#speed").innerText =  "Wind: " + speed + "km/h";
 
         document.querySelector("#section").classList.remove("loading");
+
+if (description == "clear sky") {
+        document.body.style.backgroundImage = "url('public/images/desktop/pexels-egor-kamelev-813872.jpg')";
+} else if (description == " few clouds") {
+    document.body.style.backgroundImage = "url('public/images/desktop/pexels-pixabay-268791.jpg')";
+}
+else if (description == " scattered clouds") {
+    document.body.style.backgroundImage = "url('public/images/desktop/pexels-pixabay-268791.jpg')";
+}
+else if (description == " broken clouds") {
+    document.body.style.backgroundImage = "url('public/images/desktop/pexels-pixabay-268791.jpg')";
+}
+else if (description == " shower rain") {
+    document.body.style.backgroundImage = "url('public/images/desktop/pexels-pixabay-268791.jpg')";
+}
+else if (description == "overcast clouds") {
+    document.body.style.backgroundImage = "url('public/images/desktop/noaa-99F4mC79j1I-unsplash.jpg')";
+}
+else if (description == "thunderstorm") {
+    document.body.style.backgroundImage = "url('public/images/desktop/pexels-pixabay-268791.jpg')";
+}
+else if (description == "snow") {
+    document.body.style.backgroundImage = "url('public/images/desktop/pexels-pixabay-268791.jpg')";
+}
+else if (description == "mist") {
+    document.body.style.backgroundImage = "url('public/images/desktop/pexels-pixabay-268791.jpg')";
+}
+
+
     },
 
-    backgroundPictures: function(){
-        if (this.description == "clear sky") { }
-    },
+    // backgroundPictures: function(){
+    //     if (this.description == "clear sky") { }
+    // },
 
     search: function() {
         this.fetchWeather(document.getElementById('city-name-js').value);
