@@ -212,8 +212,7 @@ input {
 
 .has-search .form-control-feedback {
     position: absolute;
-    z-index: 2;
-    
+    z-index:
     line-height: 2.375rem;
     text-align: center;
     pointer-events: none;
