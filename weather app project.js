@@ -50,7 +50,7 @@ if (description == "clear sky") {
 } else if (description.includes('clouds') == true) {
     document.body.style.backgroundImage = "url('public/images/desktop/thunderstorm.jpg')";
 }
-else if (description == " scattered clouds") {
+else if (description.includes() == " scattered clouds") {
     document.body.style.backgroundImage = "url('public/images/desktop/scatteredclouds1.jpg')";
 }
 else if (description == " broken clouds" ) {
