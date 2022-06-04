@@ -39,7 +39,7 @@ const weatherApi = {
         document.querySelector("#country-js").innerHTML = country;
         document.querySelector(".icon").src = "http://openweathermap.org/img/wn/" + icon + "@2x.png";
         document.querySelector(".weatherDescription").innerHTML = description;
-        document.querySelector(".temp").innerHTML = temp.toFixed(1) + "°C";
+        document.querySelector(".temp").innerHTML = temp.toFixed(1) + "°C";             //truncate temperature value to single decimal place
         document.querySelector(".humidity").innerHTML = "Humidity: "+ humidity + "%";
         document.querySelector("#speed").innerText =  "Wind: " + speed + "km/h";
 
@@ -47,17 +47,17 @@ const weatherApi = {
 // Different Images Based on Weather Description
 if (description == "clear sky") {
         document.body.style.backgroundImage = "url('public/images/desktop/clearsky1.jpg')";
-} else if (description == " few clouds") {
-    document.body.style.backgroundImage = "url('public/images/desktop/pexels-pixabay-268791.jpg')";
+} else if (description.includes('clouds') == true) {
+    document.body.style.backgroundImage = "url('public/images/desktop/thunderstorm.jpg')";
 }
 else if (description == " scattered clouds") {
     document.body.style.backgroundImage = "url('public/images/desktop/scatteredclouds1.jpg')";
 }
-else if (description == " broken clouds") {
-    document.body.style.backgroundImage = "url('public/images/desktop/pexels-pixabay-268791.jpg')";
+else if (description == " broken clouds" ) {
+    document.body.style.backgroundImage = "url('public/images/desktop/snow4.jpg')";
 }
-else if (description == " shower rain") {
-    document.body.style.backgroundImage = "url('public/images/desktop/pexels-pixabay-268791.jpg')";
+else if (description == "light rain") {
+    document.body.style.backgroundImage = "url('public/images/desktop/snow4.jpg')";
 }
 else if (description == "overcast clouds") {
     document.body.style.backgroundImage = "url('public/images/desktop/noaa-99F4mC79j1I-unsplash.jpg')";
