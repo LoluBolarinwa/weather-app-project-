@@ -46,12 +46,12 @@ const weatherApi = {
         document.querySelector("#section").classList.remove("loading");
 // Different Images Based on Weather Description
 if (description == "clear sky") {
-        document.body.style.backgroundImage = "url('public/images/desktop/pexels-egor-kamelev-813872.jpg')";
+        document.body.style.backgroundImage = "url('public/images/desktop/clearsky1.jpg')";
 } else if (description == " few clouds") {
     document.body.style.backgroundImage = "url('public/images/desktop/pexels-pixabay-268791.jpg')";
 }
 else if (description == " scattered clouds") {
-    document.body.style.backgroundImage = "url('public/images/desktop/pexels-pixabay-268791.jpg')";
+    document.body.style.backgroundImage = "url('public/images/desktop/scatteredclouds1.jpg')";
 }
 else if (description == " broken clouds") {
     document.body.style.backgroundImage = "url('public/images/desktop/pexels-pixabay-268791.jpg')";
@@ -127,8 +127,6 @@ const months = ["January", "February", "March", "April", "May", "June", "July", 
 var weatherDate = new Date();
 let month = months[weatherDate.getMonth()];
 document.getElementById("Date").innerHTML = month + " "+weatherDate.getDate() + ", "+weatherDate.getFullYear();
-
-
 
 
 
