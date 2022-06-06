@@ -47,29 +47,60 @@ const weatherApi = {
 // Different Images Based on Weather Description
 if (description == "clear sky") {
         document.body.style.backgroundImage = "url('public/images/desktop/clear cky.jpg')";
-} else if (description.includes('clouds') == true) {
-    document.body.style.backgroundImage = "url('public/images/desktop/thunderstorm.jpg')";
+} else if (description == "few clouds") {
+    document.body.style.backgroundImage = "url('public/images/desktop/few cloud.jpg')";
+    // (description.includes('clouds') == true) 
 }
-else if (description.includes() == " scattered clouds") {
-    document.body.style.backgroundImage = "url('public/images/desktop/scatteredclouds1.jpg')";
+else if (description == "scattered clouds") {
+    document.body.style.backgroundImage = "url('public/images/desktop/scattered clouds.jpg')";
 }
-else if (description == " broken clouds" ) {
-    document.body.style.backgroundImage = "url('public/images/desktop/snow4.jpg')";
+else if (description == "broken clouds" ) {
+    document.body.style.backgroundImage = "url('public/images/desktop/broken clouds1.jpg')";
+}
+else if (description == "overcast clouds" ) {
+    document.body.style.backgroundImage = "url('public/images/desktop/overcast cloud.jpg')";
+}
+else if (description == "drizzle") {
+    document.body.style.backgroundImage = "url('public/images/desktop/drizzle2.jpg')";
 }
 else if (description == "light rain") {
-    document.body.style.backgroundImage = "url('public/images/desktop/snow4.jpg')";
+    document.body.style.backgroundImage = "url('public/images/desktop/rain light.jpg')";
 }
-else if (description == "overcast clouds") {
-    document.body.style.backgroundImage = "url('public/images/desktop/noaa-99F4mC79j1I-unsplash.jpg')";
+else if (description == "moderate rain") {
+    document.body.style.backgroundImage = "url('public/images/desktop/rain moderate.jpg')";
+}
+else if (description == "heavy rain") {
+    document.body.style.backgroundImage = "url('public/images/desktop/rain heavy2.jpg')";
 }
 else if (description == "thunderstorm") {
-    document.body.style.backgroundImage = "url('public/images/desktop/pexels-pixabay-268791.jpg')";
+    document.body.style.backgroundImage = "url('public/images/desktop/thunderstorm2.jpg')";
 }
 else if (description == "snow") {
-    document.body.style.backgroundImage = "url('public/images/desktop/pexels-pixabay-268791.jpg')";
+    document.body.style.backgroundImage = "url('public/images/desktop/snow.jpg')";
+}
+else if (description == "light snow") {
+    document.body.style.backgroundImage = "url('public/images/desktop/shower snow.jpg')";
+}
+else if (description == "heavy snow") {
+    document.body.style.backgroundImage = "url('public/images/desktop/snow7.jpg')";
+}
+else if (description == "smoke") {
+    document.body.style.backgroundImage = "url('public/images/desktop/smoke.jpg')";
 }
 else if (description == "mist") {
-    document.body.style.backgroundImage = "url('public/images/desktop/pexels-pixabay-268791.jpg')";
+    document.body.style.backgroundImage = "url('public/images/desktop/mist.jpg')";
+}
+else if (description == "haze") {
+    document.body.style.backgroundImage = "url('public/images/desktop/haze.jpg')";
+}
+else if (description == "fog") {
+    document.body.style.backgroundImage = "url('public/images/desktop/fog.jpg')";
+}
+else if (description == "sand") {
+    document.body.style.backgroundImage = "url('public/images/desktop/sand.jpg')";
+}
+else if (description == "dust") {
+    document.body.style.backgroundImage = "url('public/images/desktop/dust.jpg')";
 }
 
 
