@@ -46,7 +46,7 @@ const weatherApi = {
         document.querySelector("#section").classList.remove("loading");
 // Different Images Based on Weather Description
 if (description == "clear sky") {
-        document.body.style.backgroundImage = "url('public/images/desktop/clear cky.jpg')";
+        document.body.style.backgroundImage = "url('public/images/desktop/clearsky3.jpg')";
 } else if (description == "few clouds") {
     document.body.style.backgroundImage = "url('public/images/desktop/few cloud.jpg')";
     // (description.includes('clouds') == true) 

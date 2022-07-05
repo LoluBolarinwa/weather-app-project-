@@ -12,6 +12,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     height: fit-content;
+    /* width: 100vw; */
     background-position: center;    /* for responsive layout*/    
 }
 
@@ -202,8 +203,6 @@ input {
 /* .symbol{
     width:60px;
     height:60px;
-
-
 
 
 /* .has-search .form-control {
