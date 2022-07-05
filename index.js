@@ -129,7 +129,7 @@ function searchURL(){
 var inputSearch = document.getElementById('city-name-js');
 inputSearch.addEventListener("keypress", function(event){
     if (event.key === "Enter") {
-        
+        document.getElementById("myBtn").click();
         // weatherApi.searchURL();
     }
 });
