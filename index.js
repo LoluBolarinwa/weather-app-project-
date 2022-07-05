@@ -131,7 +131,7 @@ inputSearch.addEventListener("keypress", function(event){
     if (event.key === "Enter") {
         event.preventDefault()
         document.getElementById("btn").click();
-        // weatherApi.searchURL();
+        weatherApi.searchURL();
     }
 });
 
