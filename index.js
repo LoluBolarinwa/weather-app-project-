@@ -127,9 +127,10 @@ function searchURL(){
 
   /* To Make Enter key Search for city */
 var inputSearch = document.getElementById('city-name-js');
-inputSearch.addEventListener("keyup", function(event){
+inputSearch.addEventListener("keypress", function(event){
     if (event.key === "Enter") {
-        weatherApi.search();   
+        
+        // weatherApi.searchURL();
     }
 });
 
